@@ -1,0 +1,9 @@
+DirectoryIndex index.hh
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !\.(css|gif|jpg|png|js|ico)$
+RewriteRule ^(.*)$ index.hh [QSA,L]
+
